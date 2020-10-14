@@ -13,8 +13,11 @@
 
 {% block body %}
     {{ include('bookings/header.html.twig') }}
+    {{ include('bookings/menu.html.twig') }}
     <div class="content">
-
+        <div class="content">
+            {% block content %}{% endblock %}
+        </div>
     </div>
     {{ include('bookings/footer.html.twig') }}
 {% endblock %}
